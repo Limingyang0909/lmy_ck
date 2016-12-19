@@ -1,3 +1,9 @@
+<?php
+require_once "jssdk.php";
+// appId  和 秘钥
+$jssdk = new JSSDK("wx343137353b99dd89", "077beddd005870696670b9c95048480e");
+$signPackage = $jssdk->GetSignPackage();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,6 +11,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<script type="text/javascript" src='http://res.wx.qq.com/open/js/jweixin-1.0.0.js'></script>
 	<script data-main = "app.js" type="text/javascript" src = "js/require.js"></script>
 </head>
 <body>
@@ -71,6 +78,50 @@
 	</footer>
 	<div class="zhanwei_footer"></div>
 </body>
+<script type="text/javascript">
+	wx.config({
+    debug: true,
+    appId: '<?php echo $signPackage["appId"];?>',
+    timestamp: <?php echo $signPackage["timestamp"];?>,
+    nonceStr: '<?php echo $signPackage["nonceStr"];?>',
+    signature: '<?php echo $signPackage["signature"];?>',
+     jsApiList: [
+        'checkJsApi',
+        'onMenuShareWeibo',
+        'onMenuShareQZone',
+        'hideMenuItems',
+        'showMenuItems',
+        'hideAllNonBaseMenuItem',
+        'showAllNonBaseMenuItem',
+        'translateVoice',
+        'startRecord',
+        'stopRecord',
+        'onVoiceRecordEnd',
+        'playVoice',
+        'onVoicePlayEnd',
+        'pauseVoice',
+        'stopVoice',
+        'uploadVoice',
+        'downloadVoice',
+        'chooseImage',
+        'previewImage',
+        'uploadImage',
+        'downloadImage',
+        'getNetworkType',
+        'openLocation',
+        'getLocation',
+        'hideOptionMenu',
+        'showOptionMenu',
+        'closeWindow',
+        'scanQRCode',
+        'chooseWXPay',
+        'openProductSpecificView',
+        'addCard',
+        'chooseCard',
+        'openCard'
+      ]
+  });
+</script>
 <script type="text/javascript" src="template/baiduTemplate.js"></script>
 <div id="mymoban"></div>
 <script type="text/javascript" src="js/index.js"></script>
