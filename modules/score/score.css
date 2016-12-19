@@ -1,0 +1,154 @@
+// *{
+// 	margin: 0;
+// 	padding: 0;
+// 	box-sizing: border-box;
+// }
+// ul,li{
+// 	list-style: none;
+// }
+// img{
+// 	border:none;
+// }
+// a{
+// 	text-decoration: none;
+// }
+// html{
+// 	font-size: 100px;
+// }
+// body{
+// 	font-size: .12rem;
+// 	width: 100%;
+// 	font-family: "microsoft yahei","微软雅黑";
+// 	color: #333;
+// 	background-color: #efefef
+// }
+.page_score .clearfix{
+	content: ".";
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	display: none;
+}
+
+
+.page_score .header{
+	position: fixed;
+	top: 0;
+    height: 2.6rem;	
+    line-height: 2.6rem;
+    background-color: #f9fafd;
+    z-index: 100;  
+    text-align: center; 
+    width: 100%; 
+    border-bottom:1px solid #e0e0e0;
+    color: #333;
+    font-size: .9rem;
+    font-weight: 700;
+}
+.page_score .header1{
+	width: 16rem;
+}
+.page_score .header a{
+	float: left;
+	display: inline-block;
+	width: 3.85rem;	
+	height: 2.85rem;
+	background: url("../../img/page_search_return.jpg") no-repeat .2rem center;
+	background-size: .75rem 1.25rem;
+}
+
+.page_score .score{
+	margin-top: 2.9rem;
+	background: #fff;
+	border-bottom: 1px solid #e0e0e0;
+}
+.page_score .score_border{
+	width: 100%;
+	height: 10.3rem;
+	padding: .65rem 0;
+}
+.page_score .borderOut{
+	width: 8.8rem;
+	height: 8.8rem;
+	border:1.1rem solid #ddd;
+	margin: 0 auto;
+	border-radius: 50%;
+
+}
+.page_score .borderIn{
+	width: 100%;
+    height: 100%;
+	border:.5rem solid #c7c7c7;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+.page_score .borderIn p{
+	margin-top: 30%;
+	width: 100%;
+	text-align: center;
+	font-size: .9rem;
+	color: #999;
+}
+
+.page_score .scoreItems{
+	background: #fff;
+	height: 4.25rem;
+	margin-bottom: .65rem;
+}
+.page_score .scoreItems a{
+	display: block;
+	float: left;
+	width: 33.3%;
+	text-align: center;
+	height: 4.25rem;
+	font-size: .7rem;
+	color: #999;	
+}
+.page_score .scoreItems a:nth-child(2){
+	border-left: 1px solid #e0e0e0;
+	border-right: 1px solid #e0e0e0;
+}
+.page_score .scoreItems a img{
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: .6rem 0 .45rem 0;
+}
+.page_score .ticket{
+	background: #fff;
+}
+.page_score .ticket a{
+	background: #fff;
+	display: block;
+	float: left;
+	width: 50%;
+	height: 9.55rem;
+	font-size: .7rem;
+	color: #999;
+}
+.page_score .ticket a img{
+	width: 100%;
+	height: 50%;
+	margin: .6rem 0 .45rem 0;
+}
+.page_score .ticket a p{
+	margin-left: .65rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	font-size: .7rem;
+}
+.page_score .ticket a p:first-child{
+	color: #333;
+}
+.page_score .ticket a p:last-child{
+	color: #e64f1a;
+}
+.page_score .ticket a:nth-child(1){
+	border-right: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+}
+.page_score .ticket a:nth-child(2){
+	border-bottom: 1px solid #e0e0e0;
+}
+.page_score .ticket a:nth-child(3){
+	border-right: 1px solid #e0e0e0;
+}

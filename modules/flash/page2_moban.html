@@ -1,0 +1,22 @@
+<script type="text/html" id="flash">
+	<ul>
+		<%for(var i = 0;i<listInfo.length;i++){%>
+			<li data_tap="<%=listInfo[i].id%>"><%=listInfo[i].name%></li>	
+		<%}%>
+	<ul>	
+</script>
+
+<script type="text/html" id="goods_list">
+	<%for(var i = 0;i<goods_listInfo.length;i++){%>
+		<div class="page_2_right_list1">
+			<div class="page_2_goodslist" index="<%=i%>" id="<%=goods_listInfo[i].id%>">
+				<img src="<%=goods_listInfo[i].img%>" class="falsh_goods">
+				<h3><%=goods_listInfo[i].name%></h3>
+				<p><span>精选</span></p>
+				<p><%=goods_listInfo[i].specifics%></p>
+				<p><span>￥<span class="goods_money"><%=goods_listInfo[i].partner_price%></span></span><span>￥<%=goods_listInfo[i].market_price%></span></p>
+				<span class="buy"><img src="img/pay.jpg"></span>
+			</div>
+		</div>	
+	<%}%>	
+</script>

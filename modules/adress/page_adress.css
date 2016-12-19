@@ -1,0 +1,94 @@
+
+ul,ol,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+
+.page_adress_main{
+	background: #efefef;
+}
+.page_adress>h3{
+	line-height: 2.7rem;
+	background: #f9fafd;
+	display: flex;
+	border-bottom: 1px solid #e0e0e0;
+}
+.page_adress>h3>img{
+	margin: auto 2.3rem auto 0.85rem;
+}
+.page_adress>h3>span{
+	font-weight: normal;
+	color: #333333;
+	margin: auto 20% auto 25%;
+}
+
+.page_adress_dinwei>h3{
+	line-height: 2.85rem;
+	text-align: center;
+	background: url("../../img/page_dingwei.jpg") no-repeat 30% center;
+	font-weight: normal;
+	font-size: 16px;
+}
+.zhanwei{
+	height: 13px;
+	width: 100%;
+	background: #efefef;
+}
+
+.user_adress1{
+	height: 5.2rem;
+	padding: 0.65rem 0 0 1rem; 
+	position: relative;
+	background: white;
+	z-index: 3;
+}
+.user_adress1>h3{
+	line-height: 2.1rem;
+	color: #333333;
+	font-weight: normal;
+	font-size: 15px;
+}
+.user_adress1>h3>span:nth-child(1){
+	margin: 0 .9rem 0 0;
+}
+.user_adress1>p{
+	color: #999999;
+	width: 15rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 2.1rem;
+}
+.user_adress1>div{
+	width: 5.2rem;
+	height: 5.2rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	background: url("../../img/page_adress_line.jpg") no-repeat left center;
+}
+.user_adress1>div>img{
+	margin: auto;
+}
+
+.footer{
+	height: 3.25rem;
+	background: white;
+	position: fixed;
+	bottom: 0;
+	display: flex;
+	width: 100%;
+}
+.footer>span{
+	padding: 0 4rem;
+	line-height: 2.4rem;
+	margin: auto;
+	text-align: center;
+	border:1px solid #ffd600;
+	border-radius: 7px;
+	background: #ffd600;
+}

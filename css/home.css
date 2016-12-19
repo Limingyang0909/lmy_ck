@@ -1,0 +1,63 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+html{
+	font-size: 20px;
+}
+body{
+	width: 100%;
+	font-size: 15px;
+	font-family: microsoft yahei,"微软雅黑";
+	overflow-x: hidden;
+}
+ul,ol,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+
+.zhanwei_footer{
+	height: 3.25rem;
+	clear: both;
+}
+footer{
+	display: flex;
+	width: 100%;
+	background: #f5f5f5;
+	position: fixed;
+	bottom: 0;
+	z-index: 20;
+}
+footer>figure{
+	flex: 1;
+	height: 3.25rem;
+}
+footer>figure>a>div{
+	height: 2rem;
+	display: flex;
+}
+footer>figure>a>div>img{
+	margin: auto;
+}
+footer>figure>a>figcaption{
+	text-align:center;
+	color: #777777;
+}
+
+#count{
+	position: fixed;
+	bottom: 1.8rem;
+	left: 65%;
+	z-index: 24;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 1.5rem;
+	background: #f40;
+	color: white;
+}
