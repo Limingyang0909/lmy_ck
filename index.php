@@ -15,7 +15,7 @@ $signPackage = $jssdk->GetSignPackage();
 	<script data-main = "app.js" type="text/javascript" src = "js/require.js"></script>
 </head>
 <body>
-	<div class="main" style="display: none;">
+	<div class="main">
 		<div class="home_index home_page">
 		
 		</div>
@@ -41,7 +41,7 @@ $signPackage = $jssdk->GetSignPackage();
 			
 		</div>
 	</div>
-	<footer style="display: none;">
+	<footer>
 		<figure>
 			<a href="#home">
 				<div>
