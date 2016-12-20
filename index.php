@@ -77,8 +77,6 @@ $signPackage = $jssdk->GetSignPackage();
 		</figure>
 	</footer>
 	<div class="zhanwei_footer"></div>
-	<input type="button" value="hehe" id="where">
-	<input type="button" value="hehe2" id="where2">
 </body>
 <script type="text/javascript">
 	wx.config({
