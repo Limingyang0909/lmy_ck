@@ -27,7 +27,7 @@ header {
 	display: flex;
 	z-index: 20;
 }
-header>a:first-child {
+header>a:nth-child(2) {
 	max-width: 12.8rem;
 	line-height: 3rem;
 	white-space: nowrap;
