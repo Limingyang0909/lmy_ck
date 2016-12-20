@@ -15,6 +15,9 @@ define(["html!./page_adress.html","css!./page_adress.css"],function(adressPage){
 				$("#adress_return").on("click",function(){
 					window.history.back(-1);
 				});
+				$("#dingweidangqian").onclick{
+					dizhi();
+				}
 			})();
 		}
 	};

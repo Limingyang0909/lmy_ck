@@ -17,7 +17,7 @@ define(["html!./orders.html","css!./page_orders.css"],function(orderPage){
 				$("#flash_page").on("click",function(){
 					location.reload();
 				});
-					$("#nav li").on("click",function(){
+				$("#nav li").on("click",function(){
 					$("#nav li").removeClass("li1");
 					$(this).addClass("li1");
 				});
