@@ -10,7 +10,7 @@ define(["html!./page2.html","css!./page_2.css"],function(page2Page){
 			$(".home_flash").html(page2Page).show().siblings("div").hide();
 			$("footer").show();
 			(function(){
-				var y =  window.screen.height 
+				var y =  document.body.offsetHeight
 					,Num = 0
 					,goodsInfo={};
 				//初始化sessionStroage对象属性
