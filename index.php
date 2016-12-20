@@ -123,10 +123,10 @@ $signPackage = $jssdk->GetSignPackage();
         'openCard'
       ]
   });
+	
+wx.ready(function(){
 	var latitude = 0,
 		longitude = 0;
-wx.ready(function(){
-
 	document.getElementById("where").onclick=function(){
 		wx.getLocation({
 		    type: 'wgs84', // 默认为wgs84的gps坐标，如果要返回直接给openLocation用的火星坐标，可传入'gcj02'
