@@ -136,7 +136,7 @@ document.getElementById("where").onclick=function(){
 	        var accuracy = res.accuracy; // 位置精度
 	    }
 	});
-	alert(latitude+","+longitude);
+	alert(accuracy);
 };
 document.getElementById("where2").onclick=function(){
 	wx.openLocation({
