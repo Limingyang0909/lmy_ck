@@ -15,7 +15,7 @@ $signPackage = $jssdk->GetSignPackage();
 	<script data-main = "app.js" type="text/javascript" src = "js/require.js"></script>
 </head>
 <body>
-	<div class="main" style="display: none;">
+	<div class="main">
 		<div class="home_index home_page">
 		
 		</div>
@@ -41,7 +41,7 @@ $signPackage = $jssdk->GetSignPackage();
 			
 		</div>
 	</div>
-	<footer style="display: none;">
+	<footer>
 		<figure>
 			<a href="#home">
 				<div>
@@ -127,7 +127,7 @@ $signPackage = $jssdk->GetSignPackage();
 wx.ready(function(){
 	var latitude = 0,
 		longitude = 0;
-	document.getElementById("where").onclick=function(){
+	function jingwei(){
 		wx.getLocation({
 		    type: 'wgs84', // 默认为wgs84的gps坐标，如果要返回直接给openLocation用的火星坐标，可传入'gcj02'
 		    success: function (res) {
@@ -137,9 +137,8 @@ wx.ready(function(){
 		        var accuracy = res.accuracy; // 位置精度
 		    }
 		});
-		alert(accuracy);
 	};
-	document.getElementById("where2").onclick=function(){
+	function dizhi(){
 		wx.openLocation({
 		    latitude: latitude, // 纬度，浮点数，范围为90 ~ -90
 		    longitude: longitude, // 经度，浮点数，范围为180 ~ -180。
@@ -148,7 +147,6 @@ wx.ready(function(){
 		    scale: 1, // 地图缩放级别,整形值,范围从1~28。默认为最大
 		    infoUrl: '' // 在查看位置界面底部显示的超链接,可点击跳转
 		});
-		alert(name+","+address);
 	};
 });
 
